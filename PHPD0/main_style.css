@@ -46,7 +46,7 @@ nav{
     position: sticky;
     margin: 1vw 1vw 1vw 1vw;
     min-width: 150px;
-    max-width: 300px;
+    max-width: 250px;
     margin-right: 10px;
     display: flex;
     flex-direction: column;
@@ -56,7 +56,7 @@ nav{
     transition: ease-in .2s;
 }
 .cardContact:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
     box-shadow: 0px 0px 5px 4px rgba(255, 255, 255, 0.322);
 
 }
@@ -73,7 +73,23 @@ nav{
 .contactDesc{
     margin: 0px 0px 10px 5px;
 }
-.imgEdit{
+.cardBtns{
+    height: 100%;
+    align-content: end;
+}
+.btnEdit{
+    margin-left: 10px;
+    border: 0px;
+    background-color: transparent;
+    padding: 0px;
     width: 32px;
     height: 32px;
+    cursor: pointer;
+}
+.btnEdit:hover{
+    transform: scale(1.05);
+}
+.imgEdit{
+    width: 100%;
+    height: 100%;
 }

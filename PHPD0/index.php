@@ -30,9 +30,13 @@
                 <h3 class="contactName"><?=$row["contactName"];?></h3>
                 <h5 class="contactPhone">Número: <?=$row["contactNumber"];?></h5>
                 <p class="contactDesc"><?=$row["contactDescription"];?> </p>
-                <form action="http://www.google.es" method="post" id="myForm">
-                    <button type="submit" class="btnEdit" name="something"><img class="imgEdit"src="https://icons.veryicon.com/png/o/miscellaneous/linear-small-icon/edit-246.png" alt=""></button>
-                    <button type="submit" class="btnEdit" name="something">Submit</button>
+
+                <form class="cardBtns" action="" method="post">
+                <?php 
+                    printf("<button type='submit' class='btnEdit' formaction='edit.php' name='id' value='%s'><img class='imgEdit' src='https://cdn-icons-png.flaticon.com/512/860/860763.png'></button>",$row["id"]);
+                    printf("<button type='submit' class='btnEdit' formaction='edit.php' name='id' value='%s'><img class='imgEdit' src='https://icons.veryicon.com/png/o/miscellaneous/easyapi-service-platform/delete-item-1.png'></button>",$row["id"]);
+                    $conn = null;
+                ?>
                 </form>
             </div>
         <?php endwhile; ?>
