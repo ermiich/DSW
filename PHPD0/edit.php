@@ -15,7 +15,7 @@ $stmt->execute();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="edit_style.css">
 </head>
 
 <body>
@@ -32,7 +32,15 @@ $stmt->execute();
             <div class="cardContact">
                 
                 <form class="cardBtns" action="" method="post">
-                Nombre:<input id="txtName"value=<?= $row["contactName"]; ?> type="text" /> 
+            
+                <div class="nameContainer">
+                    <label class="inputLabel" for="txtName">Nombre:</label>
+                    <input class="inputTxt" id="txtName"value=<?= $row["contactName"]; ?> type="text" />
+                </div>
+                <div class="nameContainer">
+                    <label class="inputLabel" for="txtName">Número:</label>
+                    <input class="inputTxt" id="txtName"value=<?= $row["contactNumber"]; ?> type="text" />
+                </div>
 
 
                 <?php 
